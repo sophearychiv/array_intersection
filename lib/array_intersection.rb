@@ -2,6 +2,8 @@
 # Time complexity: O(n x m) where n is the length of array1, and m is the length
 # of array2 since the method loops through both arrays.
 # Space complexity: O(n) because the intersection array stores the output.
+# Other strategies: I was trying to apply binary search to replace the second inner loop
+# but could not get it work because of infinite looping.
 def intersection(array1, array2)
   return [] if array1.nil? || array2.nil? || array1 == [] || array2 == []
   return [] if array1 == [] && array2 == []
